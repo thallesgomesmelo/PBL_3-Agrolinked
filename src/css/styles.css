@@ -796,7 +796,7 @@ a.btn-mobile {
 
 .benefit-card {
   padding: 2rem;
-  border: 1px solid var(--color-primary-light);
+  border: 1px solid #b9ab80;
   border-radius: var(--border-radius);
   transition: var(--transition);
 }
