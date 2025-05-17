@@ -85,6 +85,10 @@ ul {
 	font-size: 1rem;
 }
 
+a.btn-mobile {
+	display: none;
+} 
+
 .btn-primary {
 	background-color: var(--color-primary);
 	color: white;
@@ -1475,89 +1479,3 @@ ul {
 	margin-top: 3rem;
 }
 
-/* Media Queries */
-@media (min-width: 576px) {
-	.hero-buttons,
-	.cta-buttons {
-		flex-direction: row;
-	}
-}
-
-@media (min-width: 768px) {
-	.main-nav {
-		display: block;
-	}
-
-	.menu-toggle {
-		display: none;
-	}
-
-	.hero-content {
-		grid-template-columns: 1fr 1fr;
-	}
-
-	.features-grid {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.footer-content {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.product-overview-content,
-	.tab-content-inner,
-	.roi-content,
-	.case-study,
-	.sustainability-content,
-	.story-content {
-		grid-template-columns: 1fr 1fr;
-	}
-
-	.steps-container,
-	.platforms-grid,
-	.benefits-grid {
-		grid-template-columns: repeat(3, 1fr);
-	}
-
-	.sustainability-grid {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.mvv-grid {
-		grid-template-columns: repeat(3, 1fr);
-	}
-
-	.numbers-grid {
-		grid-template-columns: repeat(4, 1fr);
-	}
-
-	.team-grid {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.partners-grid {
-		grid-template-columns: repeat(4, 1fr);
-	}
-
-	.contact-grid {
-		grid-template-columns: 1fr 1fr;
-	}
-
-	.faq-grid {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-
-@media (min-width: 992px) {
-	.features-grid {
-		grid-template-columns: repeat(3, 1fr);
-	}
-
-	.footer-content {
-		grid-template-columns: repeat(4, 1fr);
-	}
-
-	.team-grid {
-		grid-template-columns: repeat(4, 1fr);
-	}
-}
