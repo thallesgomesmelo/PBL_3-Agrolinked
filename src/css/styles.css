@@ -101,7 +101,7 @@ a.btn-mobile {
 }
 
 .btn-outline {
-  background-color: transparent;
+  background-color: var(--color-primary-dark);
   border: 2px solid var(--color-primary);
   color: var(--color-primary-light);
 }
@@ -117,7 +117,7 @@ a.btn-mobile {
 }
 
 .btn-light:hover {
-  background-color: #f9fafb;
+  background-color: #a8a8a8;
 }
 
 .btn-outline-light {
