@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto - AgroLinked</title>
+    <meta name="description" content="Conheça o AgroSense, nossa plataforma inteligente para o agronegócio.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <img src="images/placeholder.jpg" alt="AgroLinked Logo" width="40" height="40">
+            <span>AgroLinked</span>
+          </a>
+
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="produto.html" class="active">Produto</a></li>
+              <li><a href="beneficios.html">Benefícios</a></li>
+              <li><a href="sobre.html">Sobre Nós</a></li>
+              <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+          </nav>
+
+          <div class="header-actions">
+            <a href="#" class="btn btn-primary btn-mobile">Solicitar Demo</a>
+            <button class="menu-toggle" id="menuToggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-container">
+        <button class="mobile-menu-close" id="menuClose">
+          <i class="fas fa-times"></i>
+        </button>
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produto.html" class="active">Produto</a></li>
+            <li><a href="beneficios.html">Benefícios</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="contato.html">Fale Conosco</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-actions">
+          <a href="#" class="btn btn-primary">Solicitar Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="page-hero">
+        <div class="container">
+          <div class="page-hero-content">
+            <h1>AgroSense: Plataforma Inteligente para o Agronegócio</h1>
+            <p>Conheça nossa solução completa que integra IoT, análise de dados e inteligência artificial para otimizar sua produção agrícola.</p>
+            <a href="#" class="btn btn-primary">Solicitar Demonstração</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Overview -->
+      <section class="product-overview">
+        <div class="container">
+          <div class="product-overview-content">
+            <div class="product-image">
+              <img src="images/placeholder.jpg" alt="Plataforma AgroSense">
+            </div>
+            <div class="product-info">
+              <h2>O que é o AgroSense?</h2>
+              <p>O AgroSense é uma plataforma completa de gestão agrícola que utiliza sensores IoT, satélites e drones para coletar dados em tempo real da sua lavoura. Nossa tecnologia processa essas informações através de algoritmos avançados de inteligência artificial para fornecer insights
+                precisos e recomendações personalizadas.</p>
+              <ul class="check-list">
+                <li>Monitoramento em tempo real de condições climáticas, umidade do solo e saúde das plantas</li>
+                <li>Previsões precisas de produtividade e detecção precoce de pragas e doenças</li>
+                <li>Otimização do uso de água, fertilizantes e defensivos agrícolas</li>
+                <li>Dashboards personalizáveis e relatórios detalhados para tomada de decisão</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works -->
+      <section class="how-it-works">
+        <div class="container">
+          <div class="section-header">
+            <h2>Como Funciona</h2>
+            <p>Entenda o funcionamento da nossa plataforma e como ela pode transformar sua produção agrícola.</p>
+          </div>
+
+          <div class="steps-container">
+            <div class="step-card">
+              <div class="step-number">1</div>
+              <h3>Coleta de Dados</h3>
+              <p>Sensores IoT instalados estrategicamente em sua propriedade coletam dados em tempo real sobre solo, clima, plantas e mais.</p>
+            </div>
+
+            <div class="step-card">
+              <div class="step-number">2</div>
+              <h3>Processamento e Análise</h3>
+              <p>Nossa plataforma processa os dados coletados utilizando algoritmos avançados de IA para gerar insights valiosos.</p>
+            </div>
+
+            <div class="step-card">
+              <div class="step-number">3</div>
+              <h3>Recomendações Personalizadas</h3>
+              <p>Receba recomendações específicas para sua lavoura, otimizando recursos e maximizando a produtividade.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Platform Features -->
+      <section class="platform-features">
+        <div class="container">
+          <div class="section-header">
+            <h2>Recursos da Plataforma</h2>
+            <p>Explore os principais recursos do AgroSense e como eles podem beneficiar seu negócio.</p>
+          </div>
+
+          <div class="tabs">
+            <div class="tabs-nav">
+              <button class="tab-btn active" data-tab="dashboard">Dashboard</button>
+              <button class="tab-btn" data-tab="monitoramento">Monitoramento</button>
+              <button class="tab-btn" data-tab="previsoes">Previsões</button>
+              <button class="tab-btn" data-tab="relatorios">Relatórios</button>
+            </div>
+
+            <div class="tab-content active" id="dashboard">
+              <div class="tab-content-inner">
+                <div class="tab-text">
+                  <h3>Dashboard Intuitivo</h3>
+                  <p>Visualize todos os dados importantes da sua propriedade em um único lugar. Nosso dashboard é personalizável e oferece uma visão clara e objetiva do status da sua lavoura.</p>
+                  <ul class="arrow-list">
+                    <li>Visão geral da propriedade</li>
+                    <li>Indicadores de performance em tempo real</li>
+                    <li>Alertas e notificações personalizáveis</li>
+                    <li>Widgets personalizáveis para suas necessidades</li>
+                  </ul>
+                </div>
+                <div class="tab-image">
+                  <img src="images/placeholder.jpg" alt="Dashboard AgroSense">
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content" id="monitoramento">
+              <div class="tab-content-inner reverse">
+                <div class="tab-image">
+                  <img src="images/placeholder.jpg" alt="Monitoramento AgroSense">
+                </div>
+                <div class="tab-text">
+                  <h3>Monitoramento em Tempo Real</h3>
+                  <p>Acompanhe em tempo real as condições da sua lavoura, com dados precisos sobre clima, solo, irrigação e muito mais.</p>
+                  <ul class="arrow-list">
+                    <li>Sensores IoT de alta precisão</li>
+                    <li>Imagens de satélite e drones</li>
+                    <li>Detecção precoce de problemas</li>
+                    <li>Mapas de calor e visualizações avançadas</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content" id="previsoes">
+              <div class="tab-content-inner">
+                <div class="tab-text">
+                  <h3>Previsões e Análises</h3>
+                  <p>Utilize o poder da inteligência artificial para prever tendências, antecipar problemas e planejar sua produção com mais eficiência.</p>
+                  <ul class="arrow-list">
+                    <li>Previsão de produtividade</li>
+                    <li>Análise de tendências climáticas</li>
+                    <li>Detecção precoce de pragas e doenças</li>
+                    <li>Recomendações de manejo baseadas em dados</li>
+                  </ul>
+                </div>
+                <div class="tab-image">
+                  <img src="images/placeholder.jpg" alt="Previsões AgroSense">
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content" id="relatorios">
+              <div class="tab-content-inner reverse">
+                <div class="tab-image">
+                  <img src="images/placeholder.jpg" alt="Relatórios AgroSense">
+                </div>
+                <div class="tab-text">
+                  <h3>Relatórios Detalhados</h3>
+                  <p>Gere relatórios completos e personalizados para análise de desempenho, planejamento e tomada de decisões estratégicas.</p>
+                  <ul class="arrow-list">
+                    <li>Relatórios personalizáveis</li>
+                    <li>Exportação em múltiplos formatos</li>
+                    <li>Comparativos históricos</li>
+                    <li>Análise de ROI e indicadores financeiros</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Platforms -->
+      <section class="platforms">
+        <div class="container">
+          <div class="section-header">
+            <h2>Disponível em Todas as Plataformas</h2>
+            <p>Acesse o AgroSense de qualquer lugar, em qualquer dispositivo, para um controle completo da sua produção.</p>
+          </div>
+
+          <div class="platforms-grid">
+            <div class="platform-card">
+              <div class="platform-icon">
+                <i class="fas fa-desktop"></i>
+              </div>
+              <h3>Versão Web</h3>
+              <p>Acesse através de qualquer navegador, com todas as funcionalidades disponíveis para uma experiência completa.</p>
+            </div>
+
+            <div class="platform-card">
+              <div class="platform-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3>App Mobile</h3>
+              <p>Aplicativo nativo para iOS e Android, com funcionalidades offline e notificações em tempo real.</p>
+            </div>
+
+            <div class="platform-card">
+              <div class="platform-icon">
+                <i class="fas fa-tablet-alt"></i>
+              </div>
+              <h3>Tablet</h3>
+              <p>Interface otimizada para tablets, ideal para uso em campo com visualizações ampliadas e controles adaptados.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta">
+        <div class="container">
+          <h2>Pronto para transformar sua produção agrícola?</h2>
+          <p>Agende uma demonstração personalizada e descubra como o AgroSense pode otimizar sua operação.</p>
+          <div class="cta-buttons">
+            <a href="#" class="btn btn-light">Solicitar Demonstração</a>
+            <a href="#" class="btn btn-outline-light">Ver Planos e Preços</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <h3>AgroLinked</h3>
+            <p>Transformando o agronegócio com soluções tecnológicas inovadoras e sustentáveis.</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3>Links Rápidos</h3>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="produto.html">Produto</a></li>
+              <li><a href="beneficios.html">Benefícios</a></li>
+              <li><a href="sobre.html">Sobre Nós</a></li>
+              <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Contato</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Av. Tecnologia Verde, 1234<br>São Paulo, SP - 01234-567</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <span>(11) 1234-5678</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>contato@AgroLinked.com.br</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>Inscreva-se para receber novidades e atualizações sobre nossas soluções.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Seu e-mail" required>
+              <button type="submit">Inscrever-se</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; <span id="currentYear"></span> AgroLinked. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+
+</html>
