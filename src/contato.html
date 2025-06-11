@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fale Conosco - AgroLinked</title>
-    <meta
-      name="description"
-      content="Entre em contato com a AgroLinked para saber mais sobre nossas soluções tecnológicas para o agronegócio."
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <meta name="description" content="Entre em contato com a AgroLinked para saber mais sobre nossas soluções tecnológicas para o agronegócio." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/mediaquery.css" />
   </head>
 
@@ -29,12 +22,7 @@
       <div class="container">
         <div class="header-content">
           <a href="index.html" class="logo">
-            <img
-              src="img/logoverde.jpg"
-              alt="AgroLinked Logo"
-              width="40"
-              height="40"
-            />
+            <img src="img/logoverde.jpg" alt="AgroLinked Logo" width="40" height="40" />
             <span>AgroLinked</span>
           </a>
 
@@ -120,52 +108,29 @@
                 <form id="contactForm" class="contact-form">
                   <div class="form-group">
                     <label for="name">Nome Completo</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      placeholder="Seu nome completo"
-                      required
-                    />
+                    <input type="text" id="input-name" name="name" placeholder="Seu nome completo" />
+                    <span id="error-name"></span>
                   </div>
 
                   <div class="form-group">
                     <label for="email">E-mail</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeholder="seu.email@exemplo.com"
-                      required
-                    />
+                    <input type="email" id="input-email" name="email" placeholder="seu.email@exemplo.com" />
+                    <span id="error-email"></span>
                   </div>
 
                   <div class="form-group">
-                    <label for="phone">Telefone (opcional)</label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      placeholder="(00) 00000-0000"
-                    />
+                    <label for="phone">Telefone</label>
+                    <input type="tel" id="input-phone" name="phone" placeholder="(00) 00000-0000" />
+                    <span id="error-phone"></span>
                   </div>
 
                   <div class="form-group">
                     <label for="message">Mensagem</label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      placeholder="Como podemos ajudar?"
-                      rows="5"
-                      required
-                    ></textarea>
+                    <textarea id="input-message" name="message" placeholder="Como podemos ajudar?" rows="5"></textarea>
+                    <span id="error-message"></span>
                   </div>
 
-                  <button
-                    type="submit"
-                    class="btn btn-primary btn-block"
-                    id="submitBtn"
-                  >
+                  <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
                     Enviar Mensagem
                   </button>
                 </form>
@@ -302,9 +267,7 @@
           </div>
 
           <div class="faq-cta">
-            <a href="#" class="btn btn-outline"
-              >Ver todas as perguntas frequentes</a
-            >
+            <a href="#" class="btn btn-outline">Ver todas as perguntas frequentes</a>
           </div>
         </div>
       </section>
@@ -359,10 +322,8 @@
             <ul class="contact-info">
               <li>
                 <i class="fas fa-map-marker-alt"></i>
-                <span
-                  >Av. Tecnologia Verde, 1234<br />São Paulo, SP -
-                  01234-567</span
-                >
+                <span>Av. Tecnologia Verde, 1234<br />São Paulo, SP -
+                  01234-567</span>
               </li>
               <li>
                 <i class="fas fa-phone"></i>
@@ -397,6 +358,9 @@
       </div>
     </footer>
 
+    <script src="./js/utils/createComponents.js"></script>
+    <script src="./js/forms.js"></script>
     <script src="js/main.js"></script>
   </body>
+
 </html>
