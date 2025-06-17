@@ -1,0 +1,13 @@
+span:not(.error-message) {
+	display: none;
+}
+
+.error-message {
+	margin-top: 4px;
+	border-color: #e53935;
+
+	font-size: 0.9rem;
+	color: #e53935;
+
+	display: block;
+}
