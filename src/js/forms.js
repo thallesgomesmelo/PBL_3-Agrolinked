@@ -3,7 +3,7 @@ const formSuccess = document.getElementById("form-success");
 const submitBtn = document.getElementById("submitBtn");
 
 contactForm.addEventListener("submit", (e) => {
-	e.preventDefault();
+	//e.preventDefault();
 
 	const fieldsIsOk = validateFields();
 
